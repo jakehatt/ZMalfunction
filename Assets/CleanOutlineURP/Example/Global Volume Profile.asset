@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4086831356692365228
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbbc47814ff925e4493c1cd48a160fdd, type: 3}
+  m_Name: CleanOutline
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  standaloneActive:
+    m_OverrideState: 1
+    m_Value: 1
+  debugMode:
+    m_OverrideState: 1
+    m_Value: 0
+  outlineColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  outlineThickness:
+    m_OverrideState: 1
+    m_Value: 1
+  enableClosenessBoost:
+    m_OverrideState: 0
+    m_Value: 0
+  closenessBoostThickness:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0.01
+    max: 5
+  closenessBoostNear:
+    m_OverrideState: 0
+    m_Value: 0.3
+    min: 0
+    max: 1
+  closenessBoostFar:
+    m_OverrideState: 0
+    m_Value: 0.7
+    min: 0.01
+    max: 1
+  enableDistanceFade:
+    m_OverrideState: 1
+    m_Value: 1
+  distanceFadeNear:
+    m_OverrideState: 1
+    m_Value: 0.323
+    min: 0
+    max: 1
+  distanceFadeFar:
+    m_OverrideState: 1
+    m_Value: 0.6
+    min: 0.01
+    max: 1
+  depthSampleType:
+    m_OverrideState: 0
+    m_Value: 0
+  depthThickness:
+    m_OverrideState: 1
+    m_Value: 1.43
+  depthMultiplier:
+    m_OverrideState: 1
+    m_Value: 3.99
+  depthBias:
+    m_OverrideState: 1
+    m_Value: 2.47
+  depthThreshold:
+    m_OverrideState: 1
+    m_Value: 0.087
+    min: 0
+    max: 1
+  depth9TilesThreshold:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0
+    max: 1
+  depth9TilesBottomFix:
+    m_OverrideState: 1
+    m_Value: 0.005
+    min: 0
+    max: 0.1
+  normalThickness:
+    m_OverrideState: 1
+    m_Value: 1
+  normalCheckDirection:
+    m_OverrideState: 1
+    m_Value: 1
+  normalMultiplier:
+    m_OverrideState: 1
+    m_Value: 11
+  normalBias:
+    m_OverrideState: 1
+    m_Value: 10
+  normalThreshold:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  enableNormalOutline:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Global Volume Profile
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -4086831356692365228}
