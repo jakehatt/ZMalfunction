@@ -91,7 +91,7 @@ public class Interactable : MonoBehaviour
             Vector3 vecdirec = (rb.gameObject.transform.position - moveto).normalized;
        
             float dis = Vector3.Distance(rb.gameObject.transform.position, moveto);
-            rb.velocity = -vecdirec * Mathf.SmoothStep(0, 20, dis)*dis;
+            rb.velocity = (-vecdirec * Mathf.SmoothStep(0, 20, dis)*dis) + player.GetComponent<Rigidbody>().velocity;
             Vector3 rbForward = rb.transform.forward;
             Vector3 torqueXZ = Vector3.Cross(cam.transform.forward, rbForward);
             Vector3 torqueY = Vector3.Project(torqueXZ*12, Vector3.up);

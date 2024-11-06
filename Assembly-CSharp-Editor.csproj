@@ -65,7 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CleanOutlineURP\Editor\CleanOutlineEditor.cs" />
+    <Compile Include="Assets\AdventureCreator\2D Demo\Scripts\Editor\ToolbarLinks2DDemo.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\AdventureCreator\Demo\Scripts\Editor\ToolbarLinksDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1065,6 +1067,7 @@
     <ProjectReference Include="Assembly-CSharp.csproj" />
     <ProjectReference Include="Masking.Editor.csproj" />
     <ProjectReference Include="VhsFx.Editor.csproj" />
+    <ProjectReference Include="AC.csproj" />
     <ProjectReference Include="VhsFx.Runtime.csproj" />
     <ProjectReference Include="Masking.Runtime.csproj" />
   </ItemGroup>

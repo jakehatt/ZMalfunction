@@ -67,13 +67,10 @@
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\FirstPersonAudio.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Jump.cs" />
     <Compile Include="Assets\CleanOutlineURP\CleanOutlineRenderPassFeature.cs" />
-    <Compile Include="Assets\Player\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Crouch.cs" />
-    <Compile Include="Assets\Player\Scripts\headCollider.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\GroundCheck.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Zoom.cs" />
-    <Compile Include="Assets\Player\Scripts\playerKick.cs" />
     <Compile Include="Assets\Player\Interactable.cs" />
     <Compile Include="Assets\Player\interactionUI.cs" />
     <Compile Include="Assets\CleanOutlineURP\CleanOutline.cs" />
@@ -102,8 +99,10 @@
     <None Include="Assets\CleanOutlineURP\Resources\CleanOutline23.shader" />
     <None Include="Assets\UCLAGameLab\Wireframe\Shaders\UCLA GameLab Wireframe Functions.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\AdventureCreator\Graphics\Fonts\SIL Open Font License.txt" />
     <None Include="Assets\UCLAGameLab\Wireframe\Shaders\UCLA GameLab Cutout Wireframe.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\AdventureCreator\Changelog.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\UCLAGameLab\Wireframe\Shaders\UCLA GameLab Double-Sided Wireframe.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -1070,6 +1069,7 @@
   <ItemGroup>
     <ProjectReference Include="Masking.Editor.csproj" />
     <ProjectReference Include="VhsFx.Editor.csproj" />
+    <ProjectReference Include="AC.csproj" />
     <ProjectReference Include="VhsFx.Runtime.csproj" />
     <ProjectReference Include="Masking.Runtime.csproj" />
   </ItemGroup>
