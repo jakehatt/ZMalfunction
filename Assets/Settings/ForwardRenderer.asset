@@ -350,7 +350,7 @@ MonoBehaviour:
   _active: 1
   _shader: {fileID: 4800000, guid: 0e83aac3b775ca94b92d8aaafbad155e, type: 3}
   _noiseScale: 0.223
-  _scaleRange: {x: -16, y: 100}
+  _scaleRange: {x: 100, y: 100}
   _palette: {fileID: 2800000, guid: f0323015424723846be8cbd5f6b23d08, type: 3}
   _pattern: {fileID: 2800000, guid: a7ad2a875f5fcf442a267169bae8f2bb, type: 3}
   _noiseMode: 0
