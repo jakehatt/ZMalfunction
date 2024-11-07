@@ -22,7 +22,7 @@ public class interactionUI : MonoBehaviour
     [SerializeField] Camera cam;
     [SerializeField] float interactRange;
     [SerializeField] RectTransform recVec;
-    [SerializeField] TextMeshProUGUI Verb;
+
   [SerializeField] TextMeshProUGUI Noun;
   [SerializeField] Canvas canvas;
     [SerializeField] public Interactable targetInteract;
@@ -55,7 +55,7 @@ public class interactionUI : MonoBehaviour
              targetInteract = hit.transform.gameObject.GetComponent<Interactable>();
 
 
-             Verb.text ="> "+ targetInteract.Basics.interactVerb;
+             Noun.text ="> "+ targetInteract.Basics.interactNoun;
           
 
 

@@ -47,6 +47,28 @@ MonoBehaviour:
   _rocking:
     m_OverrideState: 1
     m_Value: 0.065
+--- !u!114 &-4473253700635584842
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb2952b95454955ba507c3d96778a76, type: 3}
+  m_Name: VhsVol
+  m_EditorClassIdentifier: 
+  active: 1
+  _weight:
+    m_OverrideState: 0
+    m_Value: 0
+  _bleed:
+    m_OverrideState: 0
+    m_Value: 1
+  _rocking:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &-3668325919652935369
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -68,7 +90,7 @@ MonoBehaviour:
     m_Value: 1
   m_Scale:
     m_OverrideState: 1
-    m_Value: 0.949
+    m_Value: 0.914
   m_Pixelate:
     m_OverrideState: 1
     m_Value: 1
@@ -84,28 +106,6 @@ MonoBehaviour:
   m_Mode:
     m_OverrideState: 1
     m_Value: 0
---- !u!114 &-3653384716147234558
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb2952b95454955ba507c3d96778a76, type: 3}
-  m_Name: VhsVol
-  m_EditorClassIdentifier: 
-  active: 1
-  _weight:
-    m_OverrideState: 1
-    m_Value: 0.56
-  _bleed:
-    m_OverrideState: 1
-    m_Value: 7.61
-  _rocking:
-    m_OverrideState: 1
-    m_Value: 0.0146
 --- !u!114 &-3416038033077028994
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -149,7 +149,7 @@ MonoBehaviour:
     m_Value: 0.16
   intensity:
     m_OverrideState: 1
-    m_Value: 5.04
+    m_Value: 2.71
   scatter:
     m_OverrideState: 1
     m_Value: 0.71
@@ -190,10 +190,10 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 2.27
   contrast:
     m_OverrideState: 1
-    m_Value: -14.2
+    m_Value: -38
   colorFilter:
     m_OverrideState: 1
     m_Value: {r: 0, g: 1, b: 0.08251095, a: 1}
@@ -215,10 +215,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.421
 --- !u!114 &-20848752161233116
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -282,7 +282,6 @@ MonoBehaviour:
   - {fileID: -20848752161233116}
   - {fileID: -8896503401558224297}
   - {fileID: 8000503234346365726}
-  - {fileID: -3653384716147234558}
   - {fileID: -3668325919652935369}
   - {fileID: 4683178817864243737}
   - {fileID: -110703655735053097}
@@ -290,6 +289,7 @@ MonoBehaviour:
   - {fileID: -2492141223361590425}
   - {fileID: -3416038033077028994}
   - {fileID: 7174838444517472527}
+  - {fileID: -4473253700635584842}
 --- !u!114 &4683178817864243737
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -305,7 +305,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.63
   xMultiplier:
     m_OverrideState: 1
     m_Value: 1
@@ -342,7 +342,7 @@ MonoBehaviour:
     m_Value: 1
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.236
+    m_Value: 1
   rounded:
     m_OverrideState: 0
     m_Value: 0

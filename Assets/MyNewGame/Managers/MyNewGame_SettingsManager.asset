@@ -53,7 +53,7 @@ MonoBehaviour:
     useSceneDefaultPlayerStart: 0
     startingPlayerStartID: 0
   players: []
-  movementMethod: 2
+  movementMethod: 4
   inputMethod: 0
   simulatedCursorMoveSpeed: 4
   interactionMethod: 0
@@ -71,15 +71,15 @@ MonoBehaviour:
   alwaysCloseInteractionMenus: 1
   whenReselectHotspot: 0
   lockCursorOnStart: 1
-  hideLockedCursor: 0
+  hideLockedCursor: 1
   disableFreeAimWhenDragging: 0
   disableFreeAimWhenDraggingPickUp: 0
   runConversationsWithKeys: 0
   clickUpInteractions: 0
-  clickUpHotspots: 0
-  defaultMouseClicks: 1
+  clickUpHotspots: 1
+  defaultMouseClicks: 0
   allowGameplayDuringConversations: 0
-  walkToHotspotMarkers: 1
+  walkToHotspotMarkers: 0
   dragThreshold: 0
   maxInventorySlots: 0
   shareInventory: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   allowDefaultInventoryInteractions: 0
   inventoryDisableUnhandled: 1
   inventoryDisableDefined: 1
-  inventoryInteractionsHaltPlayer: 0
+  inventoryInteractionsHaltPlayer: 1
   activeWhenHover: 0
   inventoryActiveEffect: 1
   inventoryPulseSpeed: 1
@@ -134,10 +134,10 @@ MonoBehaviour:
   singleTapStraight: 0
   singleTapStraightPathfind: 0
   clickHoldSeparationStraight: 0.3
-  useFPCamDuringConversations: 1
+  useFPCamDuringConversations: 0
   onlyInteractWhenCursorUnlocked: 0
-  freeAimSmoothSpeed: 15
-  firstPersonMovementSmoothing: 1
+  freeAimSmoothSpeed: 0
+  firstPersonMovementSmoothing: 0
   assumeInputsDefined: 0
   activeInputs:
   - label: Pause game
@@ -153,7 +153,7 @@ MonoBehaviour:
     hasUpgraded: 1
   surfaces: []
   freeAimTouchSpeed: 0.01
-  dragWalkThreshold: 10
+  dragWalkThreshold: 0
   dragRunThreshold: 20
   drawDragLine: 0
   dragLineWidth: 3
@@ -198,9 +198,9 @@ MonoBehaviour:
     alwaysAnimate: 0
   highlightMaterialPropertyOverride: 
   hotspotIconSize: 0.04
-  playerFacesHotspots: 0
+  playerFacesHotspots: 1
   onlyFaceHotspotOnSelect: 0
-  scaleHighlightWithMouseProximity: 0
+  scaleHighlightWithMouseProximity: 1
   highlightProximityFactor: 4
   occludeIcons: 0
   hideIconUnderInteractionMenu: 0

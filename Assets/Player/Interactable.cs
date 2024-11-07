@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-
+using AC;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour
 
 
 {
-
+    [SerializeField] Hotspot hotspot;
     public interactBasics Basics;
     public interactCaption interactCaption;
     public interactLift interactLift;
@@ -17,12 +17,16 @@ public class Interactable : MonoBehaviour
     Camera cam;
     bool isLifting = false;
     GameObject player;
+    
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        if (hotspot !=null){
+            Basics.interactNoun = hotspot.name;
+        }
         cam = Camera.main;
         player = FindObjectOfType<FirstPersonMovement>().gameObject;
         reticle = FindObjectOfType<interactionUI>();
@@ -44,7 +48,8 @@ public class Interactable : MonoBehaviour
         if (!isLifting){
         if (Input.GetButtonDown("Interact") && reticle.targetInteract == this)
         {
-            print(interactCaption.caption);
+
+          
             switch (Basics.InteractType)
             {
                 case interactBasics.interactType.Consume:
@@ -56,6 +61,11 @@ public class Interactable : MonoBehaviour
                     case interactBasics.interactType.Drop:
                     isLifting = false;
                      Basics.InteractType = interactBasics.interactType.Lift;
+                    break;
+                      case interactBasics.interactType.Use:
+                   hotspot.RunUseInteraction();
+                  
+                 
                     break;
             }
         }
@@ -108,9 +118,8 @@ public class Interactable : MonoBehaviour
 [System.Serializable]
 public class interactBasics
 {
-    public enum interactType { Look, Smell, Consume, Listen, Touch, Talk, Lift, Drop, PickUp, Use, Interface, Loot, Melee, Lockpick, DoNothing };
+    public enum interactType { Look,  Consume, Inv, Lift, Drop,  Use};
     public interactType InteractType = new interactType();
-    public string interactVerb;
     public string interactNoun;
     public bool isCrime;
 

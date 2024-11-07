@@ -66,6 +66,8 @@
   <ItemGroup>
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\FirstPersonAudio.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Jump.cs" />
+    <Compile Include="Assets\SaveableObject.cs" />
+    <Compile Include="Assets\ConversationChecker.cs" />
     <Compile Include="Assets\CleanOutlineURP\CleanOutlineRenderPassFeature.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Crouch.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\GroundCheck.cs" />
